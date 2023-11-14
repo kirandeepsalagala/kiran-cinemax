@@ -28,9 +28,9 @@
         </div>
         <h1 class = "user-name">Hi, User</h1>
         <p class = "welcome-text">Welcome back! Please enter your details.</p>
-        <h1 class = "email-address">Email Address</h1>
+        <h1 class = "email-address">Username</h1>
         <div class = "d-flex flex-row justify-content-center">
-            <input type = "text" class = "email-input" />
+            <input type = "text" class = "email-input" id = "userName" name ="username"/>
         </div>
         <h1 class ="email-address">Password</h1>
         <div class = "d-flex flex-row justify-content-center">
@@ -57,7 +57,7 @@
         </div>
         <h1 class = "forget-text">Forgot Password?</h1>
         <div class = "d-flex flex-row justify-content-center">
-          <button class="login-button">Login</button>
+          <button class="login-button" onclick="validateLoginDetails()">Login</button>
         </div>
       </div>
     <script src="app.js"></script>

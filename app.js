@@ -8,6 +8,7 @@ function prevIcon() {
 
 }
 
+
 function passwordToggle () {
     var x = document.getElementById("passwordInput");
     var eyeClosedEl = document.getElementById("eyeClosed");
@@ -22,5 +23,25 @@ function passwordToggle () {
         x.type = "password";
         eyeClosedEl.classList.remove("d-none");
         eyeOpenEl.classList.add("d-none");
+    }
+}
+
+function validateLoginDetails () {
+    var userNameEl = document.getElementById("userName").value;
+
+    var passwordInputEl = document.getElementById("passwordInput").value
+
+    var correctUserName = "kiran";
+    
+    var correctPassword = "kiran@2022";
+
+    if (userNameEl === correctUserName && passwordInputEl === correctPassword) {
+        
+        window.location.href = "home.html";
+        console.log("valid");
+    }
+    else {
+        alert("Invalid username or password. Please try again");
+        console.log("invalid");
     }
 }
