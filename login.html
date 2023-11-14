@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "bg-container">
+        <div class = "d-flex flex-row">
+            <div class = "prev-icon-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class = "ml-1" onclick="prevIcon()">
+                    <g clip-path="url(#clip0_202_2762)">
+                        <path d="M13.8297 19C13.6803 19.0005 13.5327 18.9675 13.3977 18.9035C13.2627 18.8394 13.1438 18.746 13.0497 18.63L8.21968 12.63C8.07259 12.451 7.99219 12.2266 7.99219 11.995C7.99219 11.7633 8.07259 11.5389 8.21968 11.36L13.2197 5.35997C13.3894 5.15575 13.6333 5.02733 13.8978 5.00295C14.1622 4.97857 14.4255 5.06023 14.6297 5.22997C14.8339 5.39971 14.9623 5.64362 14.9867 5.90805C15.0111 6.17247 14.9294 6.43575 14.7597 6.63997L10.2897 12L14.6097 17.36C14.732 17.5068 14.8096 17.6855 14.8335 17.875C14.8574 18.0646 14.8265 18.257 14.7444 18.4295C14.6624 18.6021 14.5326 18.7475 14.3705 18.8486C14.2084 18.9497 14.0207 19.0022 13.8297 19Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_202_2762">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <h1 class = "login-text text-center">Login</h1>
+        </div>
+        <h1 class = "user-name">Hi, User</h1>
+        <p class = "welcome-text">Welcome back! Please enter your details.</p>
+        <h1 class = "email-address">Email Address</h1>
+        <div class = "d-flex flex-row justify-content-center">
+            <input type = "text" class = "email-input" />
+        </div>
+        <h1 class ="email-address">Password</h1>
+        <div class = "d-flex flex-row justify-content-center">
+            <input type = "password" value="" class = "email-input" id = "passwordInput" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class = "eyeclosed" onclick="passwordToggle()" id = "eyeClosed">
+                <g clip-path="url(#clip0_211_3024)">
+                  <path d="M12 14C12.8284 14 13.5 13.3284 13.5 12.5C13.5 11.6716 12.8284 11 12 11C11.1716 11 10.5 11.6716 10.5 12.5C10.5 13.3284 11.1716 14 12 14Z" fill="#92929D"/>
+                  <path d="M15.2901 18.62L14.0001 17.28L13.9301 17.21L12.6601 15.94C12.4585 15.9753 12.2546 15.9954 12.0501 16C11.5863 16.0066 11.1257 15.921 10.6953 15.7481C10.2649 15.5751 9.87313 15.3184 9.54281 14.9927C9.21249 14.667 8.9502 14.279 8.77119 13.851C8.59218 13.4231 8.50002 12.9639 8.50007 12.5C8.50471 12.2954 8.52476 12.0915 8.56007 11.89L6.56007 9.89L5.00007 8.37C3.87139 9.43347 2.90448 10.6564 2.13007 12C2.0423 12.152 1.99609 12.3245 1.99609 12.5C1.99609 12.6755 2.0423 12.848 2.13007 13C2.76007 14.09 6.13007 19.5 12.0201 19.5H12.2701C13.3776 19.4671 14.4708 19.2404 15.5001 18.83L15.2901 18.62Z" fill="#92929D"/>
+                  <path d="M8.59 6.25999L11.39 9.05999C11.5915 9.02469 11.7954 9.00463 12 8.99999C12.9283 8.99999 13.8185 9.36874 14.4749 10.0251C15.1313 10.6815 15.5 11.5717 15.5 12.5C15.4954 12.7045 15.4753 12.9085 15.44 13.11L18.12 15.79L18.96 16.63C20.1028 15.5693 21.0834 14.3462 21.87 13C21.9578 12.848 22.004 12.6755 22.004 12.5C22.004 12.3245 21.9578 12.152 21.87 12C21.23 10.89 17.71 5.31999 11.73 5.49999C10.6225 5.53285 9.52924 5.75961 8.5 6.16999L8.59 6.25999Z" fill="#92929D"/>
+                  <path d="M20.7102 19.7899L19.4102 18.4999L17.4102 16.4999L7.89019 6.96994L6.42019 5.49994L4.71019 3.78994C4.61695 3.6967 4.50626 3.62274 4.38443 3.57228C4.26261 3.52182 4.13204 3.49585 4.00019 3.49585C3.86833 3.49585 3.73776 3.52182 3.61594 3.57228C3.49411 3.62274 3.38342 3.6967 3.29019 3.78994C3.10188 3.97825 2.99609 4.23364 2.99609 4.49994C2.99609 4.76624 3.10188 5.02164 3.29019 5.20994L5.53019 7.49994L7.28019 9.19994L14.5902 16.4999L14.6602 16.5699L16.0002 17.9099L16.5902 18.4999L19.2902 21.2099C19.3831 21.3037 19.4937 21.3781 19.6156 21.4288C19.7375 21.4796 19.8682 21.5057 20.0002 21.5057C20.1322 21.5057 20.2629 21.4796 20.3848 21.4288C20.5066 21.3781 20.6172 21.3037 20.7102 21.2099C20.8039 21.117 20.8783 21.0064 20.9291 20.8845C20.9798 20.7627 21.006 20.632 21.006 20.4999C21.006 20.3679 20.9798 20.2372 20.9291 20.1154C20.8783 19.9935 20.8039 19.8829 20.7102 19.7899Z" fill="#92929D"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_211_3024">
+                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                </defs>
+            </svg>
+            <div class = "d-none" id = "eyeOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" onclick = "passwordToggle()" class = "eyeopen">
+                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#011729" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#92929D"/>
+                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#011729" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+        </div>
+        <h1 class = "forget-text">Forgot Password?</h1>
+        <div class = "d-flex flex-row justify-content-center">
+          <button class="login-button">Login</button>
+        </div>
+      </div>
+    <script src="app.js"></script>
+  </body>
+</html>
