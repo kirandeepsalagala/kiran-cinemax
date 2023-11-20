@@ -366,14 +366,116 @@
     line-height: normal;
     letter-spacing: 0.12px;
     padding-left: 28px;
+    padding-top: 20px;
 }
 
 .carousel-image-size {
-    height: 300px;
-    width: 100vw;
+    height: 400px;
+    /* width: 100vw; */
     background-size: cover;
 }
 
+.Categories-button {
+    /* display: flex; */
+    padding: 8px 32px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 10px;
+    border-radius: 8px;
+    /* background: var(--primary-soft, #252836); */
+    /* color: var(--primary-blue-accent, #12CDD9); */
+    background-color: transparent;
+    color: white;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H6/Medium */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    width: 100px;
+    border-style: none;
+    margin-left: 28px;
+    outline: none;
+}
 
+.Categories-button:hover {
+    color: var(--primary-blue-accent, #12CDD9);
+    background: var(--primary-soft, #252836);
+    outline: none;
+}
 
+.Categories-button:focus {
+    outline: none;
+}
 
+.Categories-button-second {
+    padding: 8px 32px;
+    gap: 10px;
+    border-radius: 8px;
+    /* background: var(--primary-soft, #252836); */
+    /* color: var(--primary-blue-accent, #12CDD9); */
+    background-color: transparent;
+    color: white;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H6/Medium */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    width: 100px;
+    border-style: none;
+    outline: none;
+    margin-left: 8px;
+    outline: none;
+}
+
+.Categories-button-second:focus {
+    outline: none;
+}
+
+.Categories-button-second:hover {
+    color: var(--primary-blue-accent, #12CDD9);
+    background: var(--primary-soft, #252836);
+    outline: none;
+}
+
+.button-overflow {
+    overflow-x: scroll;
+    width: 100vw;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+    margin-top: 15px;
+}
+
+.button-overflow::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.movie-poster-image {
+    height: 178px;
+    width: 135px;
+    background-size: cover;
+    padding-left: 10px;
+}
+
+.poster-overflow {
+    overflow-x: scroll;
+    width: 100vw;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+    /* margin-top: 15px */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.poster-overflow::-webkit-scrollbar {
+    display: none;
+}
