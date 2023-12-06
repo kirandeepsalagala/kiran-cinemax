@@ -365,7 +365,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.12px;
-    padding-left: 28px;
+    padding-left: 15px;
     padding-top: 20px;
 }
 
@@ -482,11 +482,20 @@
     display: none;
 }
 
+
 .movie-poster-container {
     width: 100vw;
-    height: 250px;
+    height: 185px;
     /* flex-shrink: 0; */
     /* margin-left: 2px;
     margin-right: 2px; */
     /* background-color: red; */
+}
+
+.title-color {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 35px;
 }
