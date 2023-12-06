@@ -462,7 +462,9 @@
     height: 178px;
     width: 135px;
     background-size: cover;
-    padding-left: 10px;
+    padding-left: 8px;
+    border-radius: 0px;
+    padding-right: 0px;
 }
 
 .poster-overflow {
@@ -472,10 +474,19 @@
     scroll-behavior: smooth;
     scrollbar-width: 0px;
     /* margin-top: 15px */
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2px;
+    /* padding-right: 10px; */
 }
 
 .poster-overflow::-webkit-scrollbar {
     display: none;
+}
+
+.movie-poster-container {
+    width: 100vw;
+    height: 250px;
+    /* flex-shrink: 0; */
+    /* margin-left: 2px;
+    margin-right: 2px; */
+    /* background-color: red; */
 }

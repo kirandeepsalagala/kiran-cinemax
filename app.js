@@ -106,29 +106,44 @@ function nowPlaying () {
         })
         .then(function(data) {
             console.log(data);
-            // createAndAppendNowPlaying(data);
-            // var rootEl = document.getElementById("root");
-
-            // const posterPathEl = document.createElement("h1");
-            // posterPathEl.textContent = data.results.map(movie => movie.title);
-            // rootEl.appendChild(posterPathEl);
-            // console.log(posterPathEl);
-
             const rootEl = document.getElementById('root');
+
+            // let carouselItemEl = document.getElementById("carouselItem");
+
+            // let carouselImage1El = document.getElementById("carouselImage1");
+            // carouselImage1El.src = `https://image.tmdb.org/t/p/w500/${data.results[0].poster_path}`;
+            // carouselItemEl.appendChild(carouselImage1El);
+
 
             let nowPlayingRootEl = document.createElement("div");
             nowPlayingRootEl.classList.add("d-flex", "flex-row", "poster-overflow");
+            nowPlayingRootEl.style.marginTop = "20px"
             rootEl.appendChild(nowPlayingRootEl);
+
+            let titlesRootEl = document.createElement("div");
+            titlesRootEl.classList.add("d-flex", "flex-row");
+            nowPlayingRootEl.appendChild(titlesRootEl);
+
+            const posterContainer = document.createElement("div");
+            posterContainer.classList.add("movie-poster-container","d-flex", "flex-row");
+            nowPlayingRootEl.appendChild(posterContainer);
 
             if (data.results && data.results.length > 0) {
               data.results.forEach(movie => {
                 if (movie.poster_path) {
+
                   const posterUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
                   const img = document.createElement('img');
                   img.src = posterUrl;
-                  img.alt = movie.title + ' Poster';
+                  img.alt = movie.title + 'Poster';
                   img.classList.add('movie-poster-image');
-                  nowPlayingRootEl.appendChild(img);
+                  // img.classList.add("movie-poster-container");
+                  posterContainer.appendChild(img);
+                  
+                  
+                  let titleEl = document.createElement("h1");
+                  textContent = movie.title;
+                  nowPlayingRootEl.appendChild(titleEl);
                 }
               });
             } else {
